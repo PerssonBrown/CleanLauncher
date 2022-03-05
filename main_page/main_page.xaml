@@ -1,0 +1,22 @@
+﻿<Page x:Class="CleanLauncher.main_page.main_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CleanLauncher.main_page"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      mc:Ignorable="d" 
+      d:DesignHeight="430" d:DesignWidth="680"
+      Title="main_page">
+
+    <Grid>
+        <!--上方登陆模式选择栏-->
+        <Button Height="30" Width="70" Content="离线登录" FontSize="15" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,30,0,0" Click="Offline_Click"/>
+        <Button Height="30" Width="70" Content="正版登录" FontSize="15" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,30,0,0" Click="Mojang_Click"/>
+        <Button Height="30" Width="70" Content="微软登录" FontSize="15" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,30,0,0"/>
+        <!--中间登陆界面-->
+        <ContentControl Height="330" Width="300" x:Name="login" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,80,0,0"/>
+        <!--右侧启动按钮-->
+        <Button Height="55" Width="150" Content="启动" FontSize="25" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445,160,0,0"/>
+    </Grid>
+</Page>
