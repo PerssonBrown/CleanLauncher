@@ -2,7 +2,6 @@
   
 # CleanLauncher
 
-[![Discord](https://img.shields.io/discord/935789562322632735.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/Xj9pGPcRHr)
 <a href="https://github.com/PerssonBrown/CleanLauncher/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/PerssonBrown/CleanLauncher"></a>
 <a href="https://github.com/PerssonBrown/CleanLauncher/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/PerssonBrown/CleanLauncher"></a>
 <a href="https://github.com/PerssonBrown/CleanLauncher/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerssonBrown/CleanLauncher"></a>
