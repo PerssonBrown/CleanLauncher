@@ -1,0 +1,33 @@
+﻿<Page x:Class="CleanLauncher.downloader.downloader"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CleanLauncher.downloader"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      mc:Ignorable="d" 
+      d:DesignHeight="430" d:DesignWidth="680"
+      Title="downloader">
+
+    <Grid>
+        <DataGrid Height="260" Width="500"
+                  x:Name="MCVersions"
+                  pu:DataGridHelper.SelectedBackground="#440059FF" pu:DataGridHelper.HoverBackground="#220059FF" pu:DataGridHelper.ColumnHorizontalContentAlignment="Center"
+                  SelectionMode="Single"
+                  VerticalAlignment="Top" Margin="0,30,0,0" HorizontalAlignment="Center">
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Header="版本" Binding="{Binding id}" Width="200"/>
+                <DataGridTextColumn Header="类型" Binding="{Binding type}" Width="200"/>
+            </DataGrid.Columns>-->
+        </DataGrid>
+        <Button Height="30"  Width="130"
+                Content="下载"
+                pu:ButtonHelper.CornerRadius="5" pu:ButtonHelper.ClickStyle="Sink"
+                Background="#C8306ACF" pu:ButtonHelper.HoverBrush="#306ACF"
+                VerticalAlignment="Top" Margin="0,300,0,0" HorizontalAlignment="Center"
+                Click="Button_Click"/>
+        <ProgressBar Height="20" Width="500"
+                     x:Name="progress"
+                     VerticalAlignment="Top" Margin="0,350,0,0" />
+    </Grid>
+</Page>

@@ -1,0 +1,36 @@
+﻿<Page x:Class="CleanLauncher.settings.settings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CleanLauncher.settings"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      mc:Ignorable="d" 
+      d:DesignHeight="430" d:DesignWidth="680"
+      KeepAlive="True" 
+      Title="settings">
+
+    <Grid>
+        <GroupBox Height="120" Width="600"
+                  Header="Java 设置"
+                  pu:GroupBoxHelper.IsSplitLineVisible="True" pu:GroupBoxHelper.CornerRadius="5" pu:GroupBoxHelper.ShadowColor="LightGray" VerticalAlignment="Top" Margin="0,30,0,0">
+            <Grid>
+                <ComboBox Height="25" Width="300"
+                      x:Name="JavaVersionList"
+                          DisplayMemberPath="Version"
+                      pu:ComboBoxHelper.Header="Java版本：" pu:ComboBoxHelper.IsSearchTextBoxVisible="True" pu:ComboBoxHelper.CornerRadius="5"
+                      VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,10,0,0" SelectionChanged="JavaVersionSelect_SelectionChanged"/>
+                <TextBox Height="25" Width="170"
+                         x:Name="JavaMemory"
+                         pu:TextBoxHelper.Header="Java内存：" pu:TextBoxHelper.CornerRadius="5"
+                         HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,45,0,0"
+                         TextChanged="JavaMemory_TextChanged"/>
+                <!--<CheckBox  Height="30" Width="150"
+                           Content="由启动器自动分配"
+                           pu:CheckBoxHelper.CheckBoxStyle="Switch2" pu:CheckBoxHelper.CheckedBackground="#74E041"
+                           pu:CheckBoxHelper.BoxHeight="16" pu:CheckBoxHelper.BoxWidth="32" VerticalAlignment="Top" Margin="0,45,0,0"/>-->
+            </Grid>
+
+        </GroupBox>
+    </Grid>
+</Page>

@@ -6,11 +6,20 @@
       xmlns:local="clr-namespace:CleanLauncher.main_page.LoginUI"
       xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
       mc:Ignorable="d" 
-      d:DesignHeight="330" d:DesignWidth="300"
+      d:DesignHeight="330" d:DesignWidth="320"
+      KeepAlive="True"
       Title="mojang">
 
     <Grid>
-        <TextBox Height="25" Width="270" pu:TextBoxHelper.Header="用户名：" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" />
-        <TextBox Height="25" Width="270" pu:TextBoxHelper.Header="  密码： " FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0" />
+        <TextBox Height="25" Width="270"
+                 x:Name="email"
+                 pu:TextBoxHelper.Header="用户名：" FontSize="15"
+                 pu:TextBoxHelper.IsClearButtonVisible="True" pu:TextBoxHelper.FocusedBorderBrush="#306ACF" pu:TextBoxHelper.FocusedShadowColor="#306ACF"
+                 VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" />
+        <PasswordBox Height="25" Width="270"
+                     x:Name="password"
+                     pu:PasswordBoxHelper.Header="  密码:    " FontSize="15"
+                     pu:PasswordBoxHelper.IsShowPwdButtonVisible="True" pu:PasswordBoxHelper.FocusedBorderBrush="#306ACF" pu:PasswordBoxHelper.FocusedShadowColor="#306ACF"
+                     VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0" />
     </Grid>
 </Page>

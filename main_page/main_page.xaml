@@ -7,16 +7,42 @@
       xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
       mc:Ignorable="d" 
       d:DesignHeight="430" d:DesignWidth="680"
+      KeepAlive="True" 
       Title="main_page">
 
     <Grid>
         <!--上方登陆模式选择栏-->
-        <Button Height="30" Width="70" Content="离线登录" FontSize="15" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,30,0,0" Click="Offline_Click"/>
-        <Button Height="30" Width="70" Content="正版登录" FontSize="15" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,30,0,0" Click="Mojang_Click"/>
-        <Button Height="30" Width="70" Content="微软登录" FontSize="15" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,30,0,0"/>
+        <Button Height="30" Width="90"
+                Content="离线登录" FontSize="15"
+                pu:ButtonHelper.CornerRadius="5" pu:ButtonHelper.ButtonStyle="Hollow" pu:ButtonHelper.ClickStyle="Sink"
+                BorderBrush="#306ACF" Foreground="#306ACF" pu:ButtonHelper.HoverBrush="#306ACF"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,30,0,0"
+                Click="Offline_Click"/>
+        <Button Height="30" Width="90"
+                Content="正版登录" FontSize="15"
+                pu:ButtonHelper.CornerRadius="5" pu:ButtonHelper.ButtonStyle="Hollow" pu:ButtonHelper.ClickStyle="Sink"
+                BorderBrush="#306ACF" Foreground="#306ACF" pu:ButtonHelper.HoverBrush="#306ACF"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,30,0,0"
+                Click="Mojang_Click"/>
+        <Button Height="30" Width="90"
+                Content="微软登录" FontSize="15"
+                pu:ButtonHelper.CornerRadius="5" pu:ButtonHelper.ButtonStyle="Hollow" pu:ButtonHelper.ClickStyle="Sink"
+                BorderBrush="#306ACF" Foreground="#306ACF" pu:ButtonHelper.HoverBrush="#306ACF"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,30,0,0" Click="Microsoft_Click"/>
         <!--中间登陆界面-->
-        <ContentControl Height="330" Width="300" x:Name="login" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,80,0,0"/>
+        <ContentControl Height="330" Width="320"
+                        x:Name="login"
+                        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,80,0,0"/>
         <!--右侧启动按钮-->
-        <Button Height="55" Width="150" Content="启动" FontSize="25" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445,160,0,0"/>
+        <Button Height="55" Width="150"
+                Content="启动" FontSize="25"
+                Background="#74E041" pu:ButtonHelper.HoverBrush="#74E041"
+                pu:ButtonHelper.ClickStyle="Sink" pu:ButtonHelper.CornerRadius="5"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445,150,0,0" Click="Button_Click"/>
+        <!--右侧游戏版本选择-->
+        <ComboBox Height="40" Width="150"
+                  x:Name="LaunchVersion"
+                  pu:ComboBoxHelper.CornerRadius="5" pu:ComboBoxHelper.IsSearchTextBoxVisible="True"
+                  VerticalAlignment="Top" Margin="445,220,0,0" HorizontalAlignment="Left"/>
     </Grid>
 </Page>

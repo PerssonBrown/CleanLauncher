@@ -9,10 +9,29 @@
         Title="Clean Minecraft Launcher" Height="450" Width="800">
     <Grid>
         <!--左侧选择栏-->
-        <Button Height="30" Width="70" Content="主页" FontSize="15" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,30,0,0" Click="MainPage_Click"/>
-        <Button Height="30" Width="70" Content="下载" FontSize="15" pu:ButtonHelper.CornerRadius="5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,90,0,0"/>
-        <Button Height="30" Width="70" Content="设置" FontSize="15" pu:ButtonHelper.CornerRadius="5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,150,0,0"/>
-        <Button Height="30" Width="70" Content="关于" FontSize="15" pu:ButtonHelper.CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,30"/>
+        <Button Height="30" Width="70"
+                Content="主页" FontSize="15"
+                pu:ButtonHelper.CornerRadius="5" pu:ButtonHelper.ClickStyle="Sink"
+                Background="#C8306ACF" pu:ButtonHelper.HoverBrush="#306ACF"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,30,0,0"
+                Click="MainPage_Click"/>
+        <Button Height="30" Width="70"
+                Content="下载" FontSize="15"
+                pu:ButtonHelper.CornerRadius="5" pu:ButtonHelper.ClickStyle="Sink"
+                Background="#C8306ACF" pu:ButtonHelper.HoverBrush="#306ACF"
+                VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,90,0,0"
+                Click="Download_Click"/>
+        <Button Height="30" Width="70"
+                Content="设置" FontSize="15"
+                pu:ButtonHelper.CornerRadius="5" pu:ButtonHelper.ClickStyle="Sink"
+                Background="#C8306ACF" pu:ButtonHelper.HoverBrush="#306ACF"
+                VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,150,0,0" Click="Settings_Click"/>
+        <Button Height="30" Width="70"
+                Content="关于" FontSize="15"
+                pu:ButtonHelper.CornerRadius="5" pu:ButtonHelper.ClickStyle="Sink"
+                Background="#C8306ACF" pu:ButtonHelper.HoverBrush="#306ACF"
+                HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,30"
+                Click="About_Click"/>
         <!--右侧主页面-->
         <ContentControl Height="430" Width="680" x:Name="CtrlWindow" HorizontalAlignment="Right" VerticalAlignment="Center"/>
     </Grid>
