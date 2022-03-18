@@ -2,6 +2,8 @@
   
 # CleanLauncher
 
+  [简体中文](https://github.com/PerssonBrown/CleanLauncher/blob/main/README.md) | English
+  
 <a href="https://github.com/PerssonBrown/CleanLauncher/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/PerssonBrown/CleanLauncher"></a>
 <a href="https://github.com/PerssonBrown/CleanLauncher/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/PerssonBrown/CleanLauncher"></a>
 <a href="https://github.com/PerssonBrown/CleanLauncher/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PerssonBrown/CleanLauncher"></a>
