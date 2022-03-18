@@ -15,7 +15,7 @@
                  x:Name="email"
                  pu:TextBoxHelper.Header="用户名：" FontSize="15"
                  pu:TextBoxHelper.IsClearButtonVisible="True" pu:TextBoxHelper.FocusedBorderBrush="#306ACF" pu:TextBoxHelper.FocusedShadowColor="#306ACF"
-                 VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" />
+                 VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0" TextChanged="email_TextChanged" />
         <PasswordBox Height="25" Width="270"
                      x:Name="password"
                      pu:PasswordBoxHelper.Header="  密码:    " FontSize="15"

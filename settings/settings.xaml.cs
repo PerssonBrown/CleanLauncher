@@ -90,7 +90,7 @@ namespace CleanLauncher.settings
                 StreamReader reader = File.OpenText("config.json");
                 JsonTextReader jsonTextReader = new JsonTextReader(reader);
                 JObject jsonObject = (JObject)JToken.ReadFrom(jsonTextReader);
-                jsonObject["javaLaunchVersionPath"] = ((JavaVersion)JavaVersionList.SelectedValue).Path;
+                jsonObject["javaPath"] = ((JavaVersion)JavaVersionList.SelectedValue).Path;
                 jsonObject["javaLaunchVersionIndex"] = JavaVersionList.SelectedIndex.ToString();
                 reader.Close();
                 string output = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObject, Newtonsoft.Json.Formatting.Indented);
