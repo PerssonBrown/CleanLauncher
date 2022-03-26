@@ -2,6 +2,8 @@
   
 # CleanLauncher
 
+# 该版本启动器已废弃，请前往新版本仓库：[https://github.com/PerssonBrown/CleanLauncher2](https://github.com/PerssonBrown/CleanLauncher2)
+  
 简体中文 | [English](https://github.com/PerssonBrown/CleanLauncher/blob/main/README.en.md)
 
 <a href="https://github.com/PerssonBrown/CleanLauncher/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/PerssonBrown/CleanLauncher"></a>
